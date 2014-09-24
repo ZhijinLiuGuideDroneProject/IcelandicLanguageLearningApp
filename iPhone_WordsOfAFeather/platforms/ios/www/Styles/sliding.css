@@ -1,0 +1,188 @@
+/*Sliding Menu Css*/
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	width:320;
+	height:480;
+	
+}
+
+html {
+    overflow: hidden;
+    font-family: Helvetica,sans-serif;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0; font-size: 13px; line-height: 1.231;
+}
+
+
+#viewport {
+   background:url(../Images_iPhone4/back.png) nono-repeat;
+   bakcground-size:100%;
+   width:320px;
+   height:480px;
+   
+}
+
+#close-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: transparent;
+}
+body.menu-open #close-mask {
+    display: block;
+}
+
+#page {
+    position: relative;
+    z-index: 2;
+    min-width: 320px;
+    background:url(../Images_iPhone4/bluepuffin.png) no-repeat;
+	background-size:100%;
+   width:auto;
+   height:480px;
+}
+
+body.menu-opening #page,
+body.menu-closing #page {
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in;
+}
+body.menu-moving #page {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+}
+
+    #page > header {
+        height: 44px;
+        width:auto;
+        background:url(../Images_iPhone4/top.png) no-repeat;
+		background-size:100%;
+    }
+    #page > header .trigger {
+        position: absolute;
+        z-index: 2;
+        top: 2px;
+        left: 2px;
+        display: block;
+        width: 40px;
+        height: 55px;
+        background:url(../Images_iPhone4/slidebar.png) no-repeat;
+		background-size:100%;
+    }
+	   #page > header .trigger:hover {
+        position: absolute;
+        z-index: 2;
+        top: 2px;
+        left: 2px;
+        display: block;
+        width: 40px;
+        height: 55px;
+        background:url(../Images_iPhone4/slidebarpress.png)no-repeat;
+		background-size:100%;
+    }
+    #page > header .helpbutton {
+        position: absolute;
+        z-index: 2;
+        top: 2px;
+        left: 280px;
+        display: block;
+        width: 40px;
+        height: 55px;
+        background:url(../Images_iPhone4/helpbutton.png) no-repeat;
+		background-size:100%;
+    }
+	#page > header .helpbutton:hover {
+        position: absolute;
+        z-index: 2;
+        top: 2px;
+        left: 280px;
+        display: block;
+        width: 40px;
+        height: 55px;
+        background:url(../Images_iPhone4/helpbuttonpress.png) no-repeat;
+		background-size:100%;
+    }
+
+#menu {
+    position: fixed;
+    width: 260px;
+    top: 0;
+    left: 0;
+    
+}
+
+body.menu-open #menu {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+    #menu > header {
+        padding: 0 8px;
+        width: 260px;
+        height: 43px;
+        background-image: -webkit-gradient( linear, left top, left bottom, from(#434B5B), to(#242B39));
+        background-image: -moz-linear-gradient(top, #434B5B 0%, #242B39 100%);
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #5F6673;  
+        color: #fff;
+    }
+
+    #menu .separator {
+	border-bottom: 1px solid #9E9B9B;
+	border-top: none;
+	line-height: 12px;
+    }
+	
+	#menu .separators {
+	border-bottom: 0px solid ;
+	border-top: none;
+
+    }
+    #menu li {
+	position: relative;
+	display: block;
+	list-style: none;
+	min-height: 43px;
+	line-height: 40px;
+	padding: 3px 0 3px 8px;
+	font-size: 16px;
+	color: #C4CCDA;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
+	text-align:left;
+	
+    }
+
+    #menu li img {
+   	vertical-align: middle;
+	display: block;
+	float: left;
+	margin: 4px 10px 0 0;
+	font-size: 16px;
+	color: #C4CCDA;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
+	text-align:left;
+	margin-left:-9px;		 
+    }
+
+.scrollable{
+	background:url(../Images_iPhone4/back.png) no-repeat;
+	background-size:130%;
+	width:auto;
+	height:480px;
+}
+.slidmenutest{
+	margin-left:8px;
+}

@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameback2"
+    tools:context=".GeneralGameActivity" >
+
+	<RelativeLayout
+        android:id="@+id/generalGameTop"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">    
+
+	    <TextView
+	        android:id="@+id/count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:text="@string/countNoInitial"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:id="@+id/countWord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/count"
+	        android:layout_centerVertical="true"
+	        android:text="@string/count"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />	
+	
+		<Button 
+	 		android:id="@+id/btnback"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/back_button"
+	        android:contentDescription="@string/pauseBtnDes"/>
+
+           		    
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_below="@id/generalGameTop">
+
+		<RelativeLayout 
+		    android:layout_width="wrap_content"
+    		android:layout_height="0dip"
+    		android:layout_gravity="center"
+    		android:layout_weight="0.2">
+ 
+        
+    		 <TextView
+            	android:id="@+id/question"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	android:text="@string/question"
+            	android:textSize="18sp"
+            	android:textColor="#000" 
+            	android:gravity="center|center"
+            	android:background="@drawable/dialogwood"/>	
+    		<Button
+    		    android:id="@+id/addtowordlist"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/question"
+    		    android:background="@drawable/add_button" />
+
+		</RelativeLayout>
+		
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+    		android:layout_height="0dip"
+    		android:orientation="vertical" 
+    		android:background="@drawable/dialogquestion"  		
+    		android:layout_weight="0.6">
+
+		    <Button
+		        android:id="@+id/answerA"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+	    	    
+	    	<Button
+		        android:id="@+id/answerB"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:layout_below="@id/answerA"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+	    
+	   		<Button
+		        android:id="@+id/answerC"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:layout_below="@id/answerB"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+	   	
+	 		<Button
+		        android:id="@+id/answerD"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:layout_below="@id/answerC"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+		    		    
+		</RelativeLayout>
+
+         <RelativeLayout
+		    android:layout_width="fill_parent"
+    		android:layout_height="0dip"
+    		android:orientation="horizontal"  		
+    		android:layout_weight="0.2">
+	 		
+             <ListView 
+                android:id="@+id/generalAvatarCheckAnswer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" 
+			    android:cacheColorHint="#00000000"
+			    android:scrollingCache="false"
+			    android:orientation="vertical"
+			    android:divider="@null"  
+		        android:listSelector="#00000000"  		          
+		        android:scrollbars="none"
+		        android:layout_alignParentBottom="true" >                
+             </ListView>
+             
+             <Button
+                 android:id="@+id/btnnext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:background="@drawable/next_button"
+                 android:layout_alignParentBottom="true"               
+                 android:contentDescription="@string/nextBtnDes"/>
+             
+	 	</RelativeLayout>   
+
+		
+	 </LinearLayout>
+
+
+
+
+	
+</RelativeLayout>

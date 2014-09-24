@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditWordListActivity" >
+
+	<RelativeLayout
+        android:id="@+id/top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        
+        <Button 
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button"
+            android:contentDescription="@string/backBtnDes"/>
+
+        <TextView
+            android:id="@+id/wordlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/wordlist"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:contentDescription="@string/wordlist" />
+        
+ 	</RelativeLayout>
+          
+	<RelativeLayout
+    	android:id="@+id/wordlistback"
+    	android:layout_width="match_parent"
+   	 	android:layout_height="wrap_content"
+    	android:layout_below="@+id/top"
+    	android:background="@drawable/wordlistback" >
+        
+   </RelativeLayout>
+       
+	<LinearLayout
+	    android:id="@+id/scroll"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"  
+	    android:orientation="vertical"
+	    android:layout_below="@+id/top"
+	    android:layout_above="@+id/delete">  
+           
+ 	</LinearLayout>
+
+	<RelativeLayout
+	    android:id="@+id/delete"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/wordlistback" >
+	      
+	<Button
+	    android:id="@+id/delete_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:text="@string/deletebtn"
+	    android:textColor="#FFF"
+	    android:background="@drawable/buttonstart" />
+	
+	</RelativeLayout>
+	    
+    
+   
+</RelativeLayout> 

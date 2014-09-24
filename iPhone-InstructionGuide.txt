@@ -1,0 +1,78 @@
+The iPhone_WordsOfAFeather" file stores all the real code. 
+
+This system has completed the following functions: 
+1. Get questions and options from the question files.
+2. Count the amount of answering the questions correctly.
+3. Get the level of the questions.
+4. Set and get the checkpoints.
+5. Show, use and gain the hint points.
+6. Remove one of the wrong answers.
+7. Calculate the play time consumption. 
+8. Calculate and get the final scores. 
+9. Add the user¡¯s record to the ranking list.
+10. Show the history records.
+11. Show the settings of the game.
+12. Edit the settings of the game.
+13. Initialize the settings of the game.
+14. Get the default hint points when the game is first open.
+15. Add the questions and the related answers to the word list. 
+16. Count the total number of the questions in the word list.
+17. Delete the word from the word list. 
+18. Show the word list. 
+
+ The following section will show the instruction of the code. 
+1. How to run the program?
+    Instruction: 1. Install the xcode software in the Mac OS  2. Go to the iPhone_WordsOfAFeather/platforms/ios file 3. Open the WordsOfAFeathe.xcodeproj by xcode 4. Run the project and choose the simulator. 
+
+2. How to use the app after run the device?
+
+a.  Function: The app will load. And then jump to welcome interface. The interface can be switched via touch action.
+   Instruction: touch the welcome interface and the app will jump to the main menu.
+
+b. Function: Enter and use the main-setting menu 
+    Instruction: 
+    1.You can jump to the main setting menu by touching the slide button on the top left  of the main menu or  
+slide the app main menu screen to the right. After you jump to the main-setting menu, If you want to go
+back the main menu you can click the top right  slide button or slide the main menu screen to the left. 
+    2. When you are in the main setting menu. You can touch the setting button to jump to the setting menu.         i. You can click the sound radio button to control the sound. 
+      a) Click the "on" radio button, the app will play the music. b)Click the "off" radio button, the app will pause the music.
+        ii. You can click the avatar radio button to choose the gender of avatar.
+       a) Click the male radio button, the male avatar will appear in the dialog of the general and advanced game. 
+       b) Click the female radio button, the female avatar  will appear in the dialog of the general and advanced game. 
+        iii. You can go back the main setting menu by click the back button on the top left of the screen.
+        iv. You can reset the game by touching the reset button on the bottom. All the records and word list will be clear. And the app will be the initial setting. 
+    3. When you are in the main setting menu. You can touch the ranking button to jump to the ranking menu.  You can go back the main setting menu by click the back button on the top left of the screen.
+    4. When you are in the main setting menu. You can touch the word list button to jump to the word list menu. 
+        i. You can click the edit button on the top right of the menu to edit the word list.
+           a) When you are in the edit screen, you can select the words you want to delete. Then press the  delete button, the words will be deleted.
+        ii.You can go back the main setting menu by click the back button on the top left of the screen. 
+
+c. Function: Jump to the help page
+    Instruction: You can go to the help menu by touching the help button on the top right of the main menu screen. If you want to go back to the main menu you can click the top left button called back button.
+    i You can touch the page number 1,2,3 on the top to go to the help page you want to view.
+
+d. Function: Jump to the start game menu
+   Instruction: 
+   1.You can jump to the start game menu by touching the start button in the centre of the screen. If you want to go back to the main menu you can click the top left button called back button. You also can go to        the help menu by clicking help button on the top right.
+   2. You can jump to the general game by touching the general game button.
+    i. When you are in the general game interface, you can go back to the main menu by back button on the    top left of the screen. 
+    ii. You can see the questions in the text board. You can choose the answer by click the answer button. If the answer is wrong the button will become red and the avatar will tell you the right answer. If the answer is right, the button will become yellow and the avatar will say congratulations.
+    iii. You can add word to word list by click the "+" add button on the top of the question. 
+    iv. You can go to the next question by the next question button in the bottom. 
+    v. You can see how many words you answered is correct on the top of the screen such as count:1.
+    
+   3. You can jump to the advanced game by touching the advanced game button.
+     i. When you are in the advanced game interface, you can click pause button on  the top right of the screen to make the following actions.  
+     a) You can continue game by continue button. The game will continue.
+     b) You can restart game by restart button. The game will restart by giving another question.
+     c) You can exit game by click exit game button.
+     ii. When you are in the advanced game.  You can see the questions in the text board. You can choose the answer by click the answer  button. If the answer is wrong the button will become red and the avatar will tell you the right answer and restart the game or exit  game by your option. If the answer is right, the  button will become yellow and the avatar will say congratulations. You can go to next stage by  completing the current stage.  
+    iii. If you have the hint. You can use the hint button to delete the wrong answer. After use the hint button, the wrong answer will be grey. You can earn the hints by finishing games. 
+    iv. If you finish the stage. Less time used, higher score will gained. Then you can record you results by inputing your name. The ranking will show on the ranking menu.
+       
+3. Interfaces of the app can be shown in the program.
+    Instruction: All the images of the App are stored in the file "/res/drawable-hdpi" and "/res/drawable-xhdpi". And all the inferfaces are written in the "/res/layout" file. Open these XML in the eclipse, you can see all the inferfaces.
+
+
+
+

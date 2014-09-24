@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="height=device-height, initial-scale=1,user-scalable=no;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<title>Words of a Feather</title>
+<link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+
+<link rel="apple-touch-icon" href="Images_iPhone4/touch-icon-iphone.png">
+<link rel="stylesheet" type="text/css" media="screen and (max-device-height:480px)" href="Styles/help.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (max-device-height:480px)" href="Styles/style.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-height:480px)" href="Styles/sliding.css" />
+    
+<link rel="stylesheet" type="text/css" media="screen and (min-device-height:481px) and (min-device-height:568px)" href="Styles/help1.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-height:481px) and (min-device-height:568px)" href="Styles/style1.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-device-height:481px) and (min-device-height:568px)" href="Styles/sliding1.css" />
+
+<script type="text/javascript" src="Scripts/MusicControl.js"></script>
+<script type="text/javascript" src="Scripts/Load.js"></script>
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/HelpTab.js"></script>
+<script type="text/javascript" src="Scripts/SlidingMenu.js"></script>
+<script type="text/javascript" src="Scripts/QuestionControl.js"></script>
+<script type="text/javascript" src="Scripts/WordListControl.js"></script>
+<script type="text/javascript" src="Scripts/RecordControl.js"></script>
+<script type="text/javascript" src="Scripts/SetGameControl.js"></script>
+<script type="text/javascript" src="Scripts/GeneralGameControl.js"></script>
+<script type="text/javascript" src="Scripts/AdvancedGameControl.js"></script>
+</head>
+ 
+<body>
+<!--***************************************Page Load***************************************-->
+<div data-role="page" id="pageload">
+	<div style="text-align:center;clear:both"></div> 
+</div>
+    
+<!--*************************************Welcome Screen*************************************-->
+<div data-role="page" id="welcomescreen" onClick="location.href='#start';initialPlay();"> 
+	<div class="touch">Touch Anywhere</div>
+</div>
+
+<!--***************************************Start Page***************************************-->
+<div data-role="page" id="start">
+	<!--Sliding menu-->	
+	<div id="viewport">   				
+		<div id="menu">           	
+ 			<div class="scrollable">
+				<ul>
+				  <li><img width="34" height="34" title="" alt="" src="Images_iPhone4/homepage.png" />Homepage</li>
+			    <li></li></ul>
+       	  <div class="separator" />  </div>
+            	<div class="separators"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;</div>
+             	<div class="separators"> &nbsp; </div>
+           		<ul>
+             		<li class="settingbutton" onclick="location.href='#setting';readSetting();"><p class="slidmenutest">Setting</p></li>
+					<div class="separators"> </div>
+             		<li class="rankingbutton" onclick="location.href='#record';showRecord();"><p class="slidmenutest">Ranking</p></li>
+             		<div class="separators">  </div>
+             		<li class="wordlistbutton" onclick="location.href='#wordList';showList();"><p class="slidmenutest">Look up word list</p></li>
+             	</ul>
+  			</div>
+		</div>
+	<!--start game page-->        
+	<div id="page">
+		<div id="close-mask"></div>
+		<header>
+  			<div class="trigger"></div>
+			<div class="helpbutton" id="helpbutton"onClick="location.href='#help'"></div>
+    	</header> 
+        <div class="body"> 
+      		<div class="contents">
+       			<div class="puffinmain"></div>
+            	<div class="startgame" id="startbutton" onClick="location.href='#startgame'"> </div>
+                <div class="dytest" id="startbutton" onClick="location.href='#startgame'" >Start</div>  
+            </div>         
+        </div>
+	</div>
+	</div>
+</div>
+
+<!--***************************************Start Game***************************************-->
+<div data-role="page" id="startgame">
+	<!--Top-->
+	<div data-role="header">
+		<div class="header">
+            <div class="top">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">   
+                        <div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-b"></div>
+                    <div class="ui-block-c">
+                        <div id="helpbutton" class="helpbutton" onClick= "location.href='#help';event.cancelBubble=true;"> </div>
+                    </div>     
+                </div>   
+            </div>
+   		</div>
+  	</div>
+    <!--content-->
+  	<div data-role="content">
+		<div class="puffinmains"></div>
+  		<div class="startgame"  onClick= "location.href='#generalGame';startGeneralGame();event.cancelBubble=true;"></div> 
+        <div class="general" onClick= "location.href='#generalGame';startGeneralGame();event.cancelBubble=true;">General</div>
+       	<div class="startadvance"  onClick="location.href='#advancedGame';initialAdvancedGame();event.cancelBubble=true;"></div> 
+    	<div class="advance" onClick="location.href='#advancedGame';initialAdvancedGame();event.cancelBubble=true;" >Advanced</div>
+  	</div>
+</div> 
+  
+<!--***************************************Help page***************************************-->    
+<div data-role="page" id="help">
+	<!--Top-->
+	<div data-role="header">
+		<div class="header">
+            <div class="top">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-c"><div class="help">Help</div></div>       
+                </div>      
+            </div>       
+     	</div>
+	</div>  
+	<!--moving tab on help page-->
+    <div id="moving_tab">
+		<div class="tabs">
+			<div class="lava"></div>
+			<span class="item">1</span>
+			<span class="item">2</span>
+        	<span class="item">3</span>
+		</div>
+        <!--content-->
+        <div data-role="content">						
+            <div class="panel">	
+                <ul><img src="Images_iPhone4/help.png"  height="auto" /></ul>
+                <ul><img src="Images_iPhone4/help1.png" height="auto" /></ul>
+                <ul><img src="Images_iPhone4/help2.png" height="auto" /></ul>
+            </div>
+        </div>
+	</div>
+</div>
+
+<!--***************************************General Game***************************************-->
+<div data-role="page" id="generalGame">
+	<!--Top-->
+    <div data-role="header">
+    	<div class="header">
+            <div class="top">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-b"></div>
+                    <div class="ui-block-c">
+                        <p class="topText">Count:</p>
+                    </div>
+                    <div class="ui-block-d">
+                        <p class="topText" id="countNumber">0</p>
+                    </div>
+                </div>
+            </div>
+    	</div>
+	</div> 
+	<!--Content-->
+	<div data-role="content">
+    	<!--Show Question--> 
+		<div class="dialogWood1">
+      		<p class="question" id="question">Question</p>
+      		<div id="addButton" class='addButton' onclick="addWord()"></div>
+    	</div> 
+        <!--Show Options-->   
+    	<div class="dialogQuestion">
+      		<div class="iceBlue" id="iceBlueGeneral1">
+        		<div class="option1" id="optionA" onclick="checkAnswerIsRight(id)">Option A</div>
+      		</div>
+      		<div class="iceBlue" id="iceBlueGeneral2">
+        		<div class="option2" id="optionB" onclick="checkAnswerIsRight(id)">Option B</div>
+      		</div>
+      		<div class="iceBlue" id="iceBlueGeneral3">
+        		<div class="option3" id="optionC" onclick="checkAnswerIsRight(id)">Option C</div>
+      		</div>
+      		<div class="iceBlue" id="iceBlueGeneral4">
+        		<div class="option4" id="optionD"  onclick="checkAnswerIsRight(id)">Option D</div>
+      		</div>
+    	</div>  
+        <!--Show Correct Answer and Next Button--> 
+    	<div class="ui-grid-a">
+     		<div class="ui-block-a">
+            	<div class="puffinEmpty" id="puffin"></div>
+            </div>
+      		<div class="ui-block-b">
+              <div class="bubbleEmpty" id="bubble">
+            	   <p id="result"></p>
+              </div>
+            </div>
+      		<div class="ui-block-d"></div>
+      		<div class="ui-block-c">
+            	<div id="nextButton" onclick="goNextQuestion()"></div>
+          	</div>
+    	</div>
+	</div>
+</div>
+
+<!--***************************************Advanced Games***************************************-->
+<div data-role="page" id="advancedGame">
+	<!--Top-->
+    <div data-role="header">
+    	<div class="header">
+     		<div class="top">
+        		<div class="ui-grid-c">
+          			<div class="ui-block-a">
+            			<div class="ui-grid-d">
+              				<div class="ui-block-a">
+                				<p class="topText">&nbsp;Score:</p>
+              				</div>
+              				<div class="ui-block-b">
+                				<p class="topText" id="scoreNumber">0</p>
+              				</div>
+            			</div>
+          			</div>
+          			<div class="ui-block-b"></div>
+          			<div class="ui-block-c">
+            			<div class="ui-grid-d">
+              				<div class="ui-block-a">
+                				<p class="topText">Hint:</p>
+              				</div>
+              				<div class="ui-block-b">
+                				<p class="topText" id="hintNumber">0</p>
+              				</div>
+            			</div>
+          			</div>
+          			<div class="ui-block-d"></div>
+          			<div class="ui-block-e">
+            			<div id="pauseButton" onClick="location.href='#window';startPauseTime()"></div>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+    <!--Content-->
+  	<div data-role="content">
+    	<!--Show Question-->
+    	<div class="dialogWood2">
+      		<div class="question" id="AQuestion">Question</div>
+    	</div> 
+        <!--Show Options--> 
+    	<div class="dialogQuestion">
+      		<div class="iceBlue" id="iceBlueAdvanced1">
+        		<div class="option1" id="AOptionA" onclick="checkAnswerIsRightAdvanced(id)">Option A</div>
+      		</div>
+          	<div class="iceBlue" id="iceBlueAdvanced2">
+            	<div class="option2" id="AOptionB" onclick="checkAnswerIsRightAdvanced(id)">Option B</div>
+          	</div>
+      		<div class="iceBlue" id="iceBlueAdvanced3">
+        		<div class="option3" id="AOptionC" onclick="checkAnswerIsRightAdvanced(id)">Option C</div>
+      		</div>
+      		<div class="iceBlue" id="iceBlueAdvanced4">
+        		<div class="option4" id="AOptionD" onclick="checkAnswerIsRightAdvanced(id)">Option D</div>
+     		</div>
+    	</div>
+        <!--Use Hint Point Button-->
+        <div class="ui-grid-d">
+        	<div class="ui-block-a">
+           	<div class="ui-grid-d">
+            		<div class="ui-block-a">
+                  	<p id="stage">Stage:</p>
+                  </div>
+                  <div class="ui-block-b">
+                 		<p id="stageNumber">1</p>
+                  </div>
+               </div>	
+            </div>
+            <div class="ui-block-b">
+    		 	 <div id="hintButton" class="hintButton">
+      				<p id="useHint" onclick="useHintPoint()">Use Hint</p>
+    			 </div>
+            </div>
+        </div> 
+        
+        <div id="window">
+            <div>
+                <ul class="ulStyle" >
+                    <li class="pauseButton"><p class="continue" onClick="history.back();calculatePauseTime()">Continue</p></li>
+                    <li class="pauseButton"><p class="restart" onClick="history.back();initialAdvancedGame()">Restart</p></li>
+                    <li class="pauseButton"><p class="exit" onClick="history.go(-2)">Exit</p></li>
+                </ul>
+            </div>
+        </div>
+                
+  	</div>
+</div>
+
+<!--***************************************Word List***************************************-->
+<div data-role="page" id="wordList">
+	<!--Top-->
+  	<div data-role="header">
+    	<div class="header">
+            <div class="top">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-b">
+                        <p class="topText" style="text-align:center">Look Up Word List</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <p class="topText" id="editButton" onClick="location.href='#editWordList';editList();">Edit</p>
+                    </div>
+                </div>
+            </div>
+    	</div>
+	</div>
+    <!--Show Word List-->
+  	<div data-role="content">
+    	<div class="wordListBack">
+        	<div class="topGap"></div>
+    		<div id="list" class="scrollBar"></div>
+    	</div>
+  	</div>
+</div>
+
+<!--***************************************Edit Word List***************************************-->
+<div data-role="page" id="editWordList">
+ 	<!--Top-->
+    <div data-role="header">
+    	<div class="header">
+            <div class="top">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-b">
+                 		<p class="topText" style="text-align:center">Look Up Word List</p>
+             		</div>
+                </div>
+            </div>
+    	</div>
+	</div>
+    <!--Edit Word List -->
+ 	<div data-role="content">
+    	<div class="wordListBack">
+        	<div class="topGap"></div>
+    		<div id="listEdit" class="scrollBar"></div>
+    	</div>
+    	<div id="deleteButton" onclick="deleteCheckedWords()">
+      		<p id="delete" onclick="deleteCheckedWords();history.back();showList();">Delete</p>
+    	</div>
+  	</div>
+</div>
+
+<!--***************************************Record***************************************-->
+<div data-role="page" id="record">
+	<!--Top-->
+	<div data-role="header">
+        <div class="header">
+            <div class="top">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                    	<div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-b">
+                    	<p class="topText" style="text-align:center">Record</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  	</div>
+    <!--Record Content-->
+  	<div data-role="content">
+    	<div class="rankingBar">
+      	<p class="ranking">Local</p>
+    	</div>
+    <div id="rankingBoard"></div>
+  </div>
+</div>
+
+<!--***************************************Setting***************************************-->
+<div data-role="page" id="setting">
+	<!--Top-->
+	<div data-role="header">
+		<div class="header">
+            <div class="top">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <div class="backbutton" id="backbutton" onClick="history.back()"></div>
+                    </div>
+                    <div class="ui-block-b">
+                        <p class="topText" style="text-align:center">Setting</p>
+                    </div>
+                </div>
+            </div>
+    	</div>
+	</div>
+  	<!--Setting Content-->
+  	<div data-role="content">
+    	<!--Setting Language-->
+		<div class="settingBar1">
+      		<table class="settingRow1">
+                <tr>
+                    <td class="settingText" width="30%">Language</td>
+                    <td width="10%">
+                    <input type="radio" name="language" value="english" onClick="editSetting('language')" />
+                    </td>
+                    <td width="60%">English</td>
+                </tr>
+      		</table>
+    	</div>
+        <!--Setting Sound-->
+    	<div class="settingBar2">
+      		<table class="settingRow1">
+        		<tr>
+          			<td class="settingText" width="30%">Sound</td>
+          			<td width="10%">
+            		<input type="radio" name="sound" value="on" onClick="editSetting('sound')" />
+          			</td>
+          			<td width="20%">On</td>
+          			<td width="10%">
+            		<input type="radio" name="sound" value="off" onClick="editSetting('sound')" />
+          			</td>
+          			<td width="20%">Off</td>
+          			<td width="10%"></td>
+        		</tr>
+      		</table>
+    	</div>
+        <!--Setting Avatar-->
+    	<div class="settingBar3">
+      		<table class="settingRow2">
+        		<tr>
+          			<td class="settingText" width="30%">Avatar</td>
+          			<td width="10%">
+            		<input type="radio" name="avatar" value="male" onClick="editSetting('avatar')" />
+          			</td>
+          			<td width="20%">
+                    <img src="Images_iPhone4/puffinMale.png" id="male"/>
+                  </td>
+          			<td width="10%">
+            		<input type="radio" name="avatar" value="female" onClick="editSetting('avatar')" />
+          			</td>
+          			<td width="20%">
+                    <img src="Images_iPhone4/puffinFemale.png" id="female"/>
+                  </td>
+          			<td width="10%"></td>
+        		</tr>
+      		</table>
+    	</div>
+        <!--Reset Game-->
+    	<div id="reset">
+      		<p id="resetText" onclick="resetConfirm()">Reset</p>
+    	</div>
+	</div>
+</div>
+
+<!--***************************************Script for loading things***************************************-->
+<script>$('#main').css("height",window.innerHeight+100);  
+window.scrollTo(0, 1);  
+//Redefined the hight  
+$("#main").css("height",window.innerHeight);  
+//Compatible with different models, avoid window sliding 
+</script>
+
+<script>
+	slidingMenu();
+	help();	
+	writeQuestion();
+</script>
+</body>
+</html>

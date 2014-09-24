@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameback2"
+    tools:context=".AdvancedGameActivity" >
+
+	<RelativeLayout
+        android:id="@+id/generalGameTop"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">    
+
+	    <TextView
+	        android:id="@+id/scoreWord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:text="@string/gameScore"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />	
+	            
+	    <TextView
+	        android:id="@+id/score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/scoreWord"
+	        android:layout_centerVertical="true"
+	        android:text="@string/timeInitial"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	     <TextView
+	        android:id="@+id/hintPointWord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_centerVertical="true"
+	        android:text="@string/hintPointWord"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />	
+	            
+	    <TextView
+	        android:id="@+id/hintPoint"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/hintPointWord"
+	        android:layout_centerVertical="true"
+	        android:text="@string/hintPoint"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+
+	    	
+		<Button 
+	 		android:id="@+id/btnpause"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/pause_button"
+	        android:contentDescription="@string/pauseBtnDes"/>
+
+           		    
+	</RelativeLayout>    
+	<LinearLayout
+        android:id="@+id/advancedLinearLayout"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_below="@id/generalGameTop">
+
+		<RelativeLayout 
+		    android:layout_width="wrap_content"
+    		android:layout_height="0dip"
+    		android:layout_gravity="center"
+    		android:layout_weight="0.2">
+ 
+        
+    		 <TextView
+            	android:id="@+id/advancedQuestion"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	android:text="@string/question"
+            	android:textSize="18sp"
+            	android:textColor="#000" 
+            	android:gravity="center|center"
+            	android:background="@drawable/dialogwood"/>	
+
+		</RelativeLayout>
+		
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+    		android:layout_height="0dip"
+    		android:orientation="vertical" 
+    		android:background="@drawable/dialogquestion"  		
+    		android:layout_weight="0.6">
+
+		    <Button
+		        android:id="@+id/advancedAnswerA"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+	    	    
+	    	<Button
+		        android:id="@+id/advancedAnswerB"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:layout_below="@id/advancedAnswerA"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+	    
+	   		<Button
+		        android:id="@+id/advancedAnswerC"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:layout_below="@id/advancedAnswerB"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+	   	
+	 		<Button
+		        android:id="@+id/advancedAnswerD"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/answer"
+		        android:layout_below="@id/advancedAnswerC"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:background="@drawable/general_button_all"/>
+		    		    
+		</RelativeLayout>
+
+         <RelativeLayout
+		    android:layout_width="fill_parent"
+    		android:layout_height="0dip"
+    		android:orientation="horizontal"  		
+    		android:layout_weight="0.2">
+             
+             <Button
+                 android:id="@+id/btnHint"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:background="@drawable/hint_button"
+                 android:layout_alignParentBottom="true"    
+                 android:text="@string/usehintpoint" 
+                 android:textStyle="bold"
+                 android:gravity="center|center"       
+                 android:contentDescription="@string/hintBtnDes"/>
+             
+	 	</RelativeLayout>   
+
+		
+	 </LinearLayout>
+
+
+
+
+</RelativeLayout>

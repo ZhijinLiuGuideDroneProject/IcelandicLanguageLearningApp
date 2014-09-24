@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_frame"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/back1920">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back1920"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            
+
+            <ImageButton
+                android:id="@+id/settingtop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/settingtop3"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/homepage" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="88dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/settingbutton"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="28dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rankingbutton"
+            android:layout_marginTop="28dp" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/settingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/settingbutton"
+            android:contentDescription="@string/app_name" /><Button
+            android:id="@+id/rankingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/settingbutton"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rankingbutton"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rankingbutton"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/wordbutton" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="36dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rankingbutton"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/relativeLayout3" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_toRightOf="@+id/relativeLayout3"
+            android:text="@string/ranking"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ranking"
+            android:layout_below="@+id/relativeLayout4" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_toRightOf="@+id/relativeLayout3" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/settingbutton"
+            android:layout_alignBottom="@+id/settingbutton"
+            android:layout_toRightOf="@+id/relativeLayout3"
+            android:gravity="left|center"
+            android:text="@string/setting"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wordlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignLeft="@+id/relativeLayout3"
+            android:gravity="center_vertical"
+            android:text="@string/wordlist"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

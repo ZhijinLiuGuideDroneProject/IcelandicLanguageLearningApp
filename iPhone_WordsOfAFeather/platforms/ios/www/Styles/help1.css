@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* Help Css */
+
+body {
+		
+	}
+	
+	a {
+		color:#333;
+		text-decoration:none;
+		display:block;
+	}
+
+	a:hover {
+		color:#888;
+		text-decoration:none;
+	}
+	
+	#moving_tab {
+		/* hide overlength child elements*/
+		overflow:hidden;
+		
+		/* all the child elements are refering to this width */
+		width:320px;
+
+		/* fix ie 6 overflow bug */
+		position:relative;
+		
+		/* styling */
+		margin:0 auto;
+		margin-top:50px;
+	}
+	
+		#moving_tab .tabs {
+			/* enable absolute position for .lava */
+			position:relative;	
+			height:30px;
+			
+			/* styling */
+			padding-top:5px;
+			cursor:default;
+		}
+	
+		#moving_tab .tabs .item {
+			/* enable z-index */
+			position:relative;
+			z-index:10;
+		
+			/* display in one row */
+			float:left;
+			display:block;
+
+			/* width = half size of #moving_tab */
+			width:100px;
+			
+			/* height = height of .tabs */
+			text-align:center;
+			height:29px;
+			/*text color*/
+			color:#FFFFFF;
+			font-size:14px;
+			font-weight:700;
+			/*tab background*/
+			/*background:url(../Images_iPhone4/tab.png) no-repeat;*/
+			background-size:40%;
+			background-position:center;
+			
+		}
+		
+
+		#moving_tab .tabs .lava {
+			/* Set it to absolute */
+			position:absolute;
+			top:3px; left:0px;
+		
+			margin-left:33px;
+			/* display the lava in bottom most layer */
+			z-index:0;		
+				
+			/* width = half size of #moving_tab */
+			width:100px;
+
+			/* height = height of .tabs */
+			height:30px;
+			
+			/* styling */
+			background:url(../Images_iPhone4/tab.png) no-repeat;
+			background-size:35%;
+
+		}
+		
+		#moving_tab .content {
+			/* enable absolute position for .panel */	
+			position:relative;
+			overflow:hidden;
+			
+			
+		}
+		
+		#moving_tab .panel {
+			/* width is width of #moving_tab times 3 */
+			position:relative;
+			width:900px;
+		}
+		
+		#moving_tab .panel ul {
+			/* display in one row */
+			float:left;
+	
+			
+			/* width is the same with #moving_tab */
+			width:300px;
+			
+			/* remove all styles */
+			padding:0;
+			margin:0;
+			list-style:none;
+			
+
+		}
+			/* styling */
+			#moving_tab .panel ul li {
+				padding:5px 0 5px 10px;	
+				border-bottom:1px dotted #fff;
+			}
+			
+			#moving_tab .panel ul img {	
+				padding:5px 0 5px 10px;	
+				width:280px;
+				
+				height:auto;
+				background-size:100%;
+				
+			}
+
+		

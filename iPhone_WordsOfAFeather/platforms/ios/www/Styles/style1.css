@@ -1,0 +1,926 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+}
+#welcomescreen{
+	background:url(../Images_iPhone5/welcome1136.png)no-repeat;
+	width:320px;
+	height:568px;
+	background-size:100%;
+}
+.top{
+	width:auto;
+	height:auto;
+	background:url(../Images_iPhone4/top.png) top no-repeat;
+	background-size:100%;
+	margin:0;
+	margin-right:auto;
+	padding:0;
+}
+.tophelp{
+	width:auto;
+	height:auto;
+	background:url(../Images_iPhone4/top.png)top no-repeat;
+	background-size:100%;
+	margin:auto;
+	padding:0;
+}
+#start{
+	width:320px;
+	height:568px;
+	background-size:100%;
+}
+#help{
+	background:url(../Images_iPhone5/back1920.png)no-repeat;
+	width:320px;
+	height:568px;
+	background-size:100%;
+}
+.header{
+	 width:auto;
+	 height:0px;
+	 margin:0;
+	 padding:0;
+}
+.slidebutton{
+	background:url(../Images_iPhone4/slidebar.png) no-repeat;
+	width:auto;
+	height:78px;
+	margin:0;
+	padding:0;
+	background-size:120%;
+	background-position:left top;
+}
+.slidebutton:hover{
+	background:url(../Images_iPhone4/slidebarpress.png)no-repeat;
+	width:auto;
+	height:78px;
+	margin:0;
+	padding:0;
+	background-size:120%;
+	background-position:left top;
+}
+.startgame{
+	background:url(../Images_iPhone4/buttonstart.png)no-repeat;
+	width:auto;
+	height:100px;
+	background-position:center;
+	margin-top:-30px;
+	position:relative;
+	background-size:40%;
+}
+.startgame:hover{
+	background:url(../Images_iPhone4/startpress.png) no-repeat;
+	width:auto;
+	height:100px;
+	background-position:center;
+	margin-top:-30px;
+	background-size:36%;
+}
+.dytest {
+	position:relative;
+	margin-left:140px;
+	top:-62px;
+	color:#FEFEFE;
+	font-size:1.2em;
+	font-family:sans-serif;
+	text-shadow:none;
+	font-weight:bold;
+}
+.helpbutton{
+	background:url(../Images_iPhone4/helpbutton.png) no-repeat;
+	width:auto;
+	height:75px;
+	margin:0;
+	padding:0;
+	background-size:120%;
+	background-position:right top;
+}
+.helpbutton:hover{
+	background:url(../Images_iPhone4/helpbuttonpress.png) no-repeat;
+	width:auto;
+	height:75px;
+	margin:0;
+	padding:0;
+	background-size:120%;
+	background-position:right top;
+}
+#startgame{
+	background:url(../Images_iPhone5/blue1136.png) no-repeat;
+	width:320px;
+	height:568px;
+	background-size:100%;
+}
+.backbutton{
+	background:url(../Images_iPhone4/backbutton.png) no-repeat;
+	width:auto;
+	height:40px;
+	margin:0;
+	padding:0;
+	background-size:120%;
+	background-position:left top;
+}
+.backbutton:hover{
+	background:url(../Images_iPhone4/backbuttongrey.png)no-repeat;
+	width:auto;
+	height:78px;
+	margin:0;
+	padding:0;
+	background-size:120%;
+	background-position:left top;
+}
+.help{
+    background-position:center;
+	text-align:center;
+	margin-left:120px;
+	margin-top:10px;
+	color:#FEFEFE;
+	font-size:1.2em;
+	font-family:sans-serif;
+}
+.startadvance{
+	background:url(../Images_iPhone4/buttonstart.png) no-repeat;
+	width:auto;
+	height:50px;
+	background-position:center;
+	margin-top:-35px;
+	background-size:40%;
+}
+.startadvance:hover{
+	background:url(../Images_iPhone4/startpress.png) no-repeat;
+	width:auto;
+	height:50px;
+	background-position:center;
+	margin-top:-35px;
+	background-size:36%;
+}
+.general {
+	position:relative;
+	margin-left:120px;
+	top:-60px;
+	color:#FEFEFE;
+	font-size:1em;
+	font-family:sans-serif;
+	text-shadow:none;
+	font-weight:bold;
+}
+.advance{
+	position:relative;
+	margin-left:115px;
+	top:-35px;
+	color:#FEFEFE;
+	font-size:1em;
+	font-family:sans-serif;
+	text-shadow:none;
+	font-weight:bold;
+}
+
+.touch{
+	position:relative;
+	margin-left:100px;
+	top:295px;
+	color:#002B68;
+	font-size:1.2em;
+	font-family:sans-serif;
+}
+	
+.puffinmain{
+	background:url(../Images_iPhone4/puffin.png) no-repeat;
+	background-size:27%;
+	width:auto;
+	height:80px;
+	margin-top:135px;
+	position:relative;
+	background-position:center;
+}	
+.puffinmains{
+	background:url(../Images_iPhone4/puffingeneral.png) no-repeat;
+	background-size:21%;
+	width:auto;
+	height:65px;
+	margin-top:135px;
+	position:relative;
+    background-position:center;
+}
+
+.settingbutton{
+	background:url(../Images_iPhone4/settingbutton.png) no-repeat;
+	background-size:100%;
+	position:relative;
+	width:auto;
+	height:44px;
+	margin-left:-9px;
+	top:30px;
+}
+.rankingbutton{
+	background:url(../Images_iPhone4/rankingbutton.png)no-repeat;
+	background-size:100%;
+	position:relative;
+	width:auto;
+	height:44px;
+	margin-left:-9px;
+	top:30px;
+}
+
+.wordlistbutton{
+	background:url(../Images_iPhone4/wordbutton.png)no-repeat;
+	background-size:100%;
+	position:relative;
+	width:auto;
+	height:44px;
+	margin-left:-9px;
+	top:30px;
+}
+.settingbutton:hover{
+	background:url(../Images_iPhone4/settingbuttonpress.png)no-repeat;
+	background-size:100%;
+	position:relative;
+	width:auto;
+	height:44px;
+	margin-left:-9px;
+	top:30px;
+}
+.rankingbutton:hover{
+	background:url(../Images_iPhone4/rankingbuttonpress.png)no-repeat;
+	background-size:100%;
+	position:relative;
+	width:auto;
+	height:44px;
+	margin-left:-9px;
+	top:30px;
+}
+.wordlistbutton:hover{
+	background:url(../Images_iPhone4/wordbuttonpress.png)no-repeat;
+	background-size:100%;
+	position:relative;
+	width:auto;
+	height:44px;
+	margin-left:-9px;
+	top:30px;
+}
+
+/* pageLoad */
+#pageLoad{
+	background:url(../Images_iPhone4/puffinload.png)no-repeat;
+	position:fixed;background-position:absolute;left:100px;right:0;top:160px;bottom:0;
+	z-index:999;
+	background-size:40%;
+}
+#pageLoad div{
+	text-align:center;
+	height:480px;
+	width:568px;
+	margin-top:15px;
+	margin-left:-90px;
+	font-weight:bold;
+
+}
+
+#pageLoad samp{z-index:1;
+overflow:hidden;
+width:0;
+}
+
+#pageLoad span{
+	display:block;
+	text-align:center;
+	color:#06557E;
+	font-weight:bold;
+	font-family:Arial;
+	height:24px;
+	font-size:24px;
+	width:340px;
+	padding-right:10px;
+	position:relative;
+	top:80px;
+}
+
+/* General game */
+#generalGame{
+	background:url(../Images_iPhone5/gameback1136.png) no-repeat;
+	width:320px;
+	height:568px;
+	background-size:100%;
+}
+.topText{
+	margin-top:10px;
+}
+.dialogWood1{
+	width:auto;
+	height:160px;
+	background:url(../Images_iPhone4/dialogwood.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position:50% 40px;
+}
+.dialogWood2{
+	width:auto;
+	height:160px;
+	background:url(../Images_iPhone4/dialogwood.png);
+	background-repeat:no-repeat;
+	background-size:50%;
+	background-position:50% 40px;
+}
+.question{
+	position:relative;
+	color:#000000;
+	font-size:1em;
+	font-family:sans-serif;
+	top:90px;
+	text-align:center;
+}
+.addButton{
+	width:25px;
+	height:25px;
+	background:url(../Images_iPhone4/addbutton.png);
+	background-repeat:no-repeat;
+	background-size:120%;
+	margin-left:210px;
+	margin-top:22px;
+}
+.addButton:hover{
+	width:25px;
+	height:25px;
+	background:url(../Images_iPhone4/addbuttongrey.png);
+	background-repeat:no-repeat;
+	background-size:120%;
+	margin-left:210px;
+	margin-top:22px;
+}
+.addButton:hover{
+	width:25px;
+	height:25px;
+	background:url(../Images_iPhone4/addbuttongrey.png);
+	background-repeat:no-repeat;
+	background-size:120%;
+	margin-left:210px;
+	margin-top:22px;
+}
+.addButtonDisabled{
+	width:25px;
+	height:25px;
+	background:url(../Images_iPhone4/addbuttongrey.png);
+	background-repeat:no-repeat;
+	background-size:120%;
+	margin-left:210px;
+	margin-top:22px;
+}
+.dialogQuestion{
+	width:auto;
+	height:300px;
+	background:url(../Images_iPhone4/dialogquestion.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:50% 0%;
+}
+.iceBlue{
+	background:url(../Images_iPhone4/iceblue.png);
+	background-repeat:no-repeat;
+}
+.iceBlue:hover{
+	background:url(../Images_iPhone4/iceblack.png);
+	background-repeat:no-repeat;
+}
+.iceRight{
+	background:url(../Images_iPhone4/iceyellow.png);
+	background-repeat:no-repeat;
+}
+.iceWrong{
+	background:url(../Images_iPhone4/icered.png);
+	background-repeat:no-repeat;
+}
+.iceDisabled{
+	background:url(../Images_iPhone4/iceblue.png);
+	background-repeat:no-repeat;
+}
+#iceBlueGeneral1{
+	width:auto;
+	height:85px;
+   	background-size:65%;
+	background-position:50% 100%;	
+}
+#iceBlueGeneral1:hover{
+	width:auto;
+	height:85px;
+   	background-size:65%;
+	background-position:50% 100%;	
+}
+#iceBlueGeneral2{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 85%;	
+}
+#iceBlueGeneral2:hover{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 85%;	
+}
+#iceBlueGeneral3{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 70%;	
+}
+#iceBlueGeneral3:hover{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 70%;	
+}
+#iceBlueGeneral4{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 50%;	
+}
+#iceBlueGeneral4:hover{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 50%;	
+}
+
+#iceBlueAdvanced1{
+	width:auto;
+	height:85px;
+   	background-size:65%;
+	background-position:50% 100%;
+}
+#iceBlueAdvanced1:hover{
+	width:auto;
+	height:85px;
+   	background-size:65%;
+	background-position:50% 100%;
+}
+#iceBlueAdvanced2{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 85%;	
+}
+#iceBlueAdvanced2:hover{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 85%;	
+}
+#iceBlueAdvanced3{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 70%;		
+}
+#iceBlueAdvanced3:hover{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 70%;		
+}
+#iceBlueAdvanced4{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 50%;	
+}
+#iceBlueAdvanced4:hover{
+	width:auto;
+	height:60px;
+	background-size:65%;
+	background-position:50% 50%;	
+}
+
+.option1{
+	position:relative;
+	color:#FFFFFF;
+	font-size:1em;
+	top:60px;
+	text-align:center;
+	font-family:sans-serif;
+	text-shadow:none;
+}
+.option2{
+	position:relative;
+	color:#FFFFFF;
+	font-size:1em;
+	top:30px;
+	text-align:center;
+	font-family:sans-serif;
+	text-shadow:none;
+}
+.option3{
+	position:relative;
+	color:#FFFFFF;
+	font-size:1em;
+	top:28px;
+	text-align:center;
+	font-family:sans-serif;
+	text-shadow:none;
+}
+.option4{
+	position:relative;
+	color:#FFFFFF;
+	font-size:1em;
+	top:23px;
+	text-align:center;
+	font-family:sans-serif;
+	text-shadow:none;
+}
+.puffinFemale{
+	width:auto;
+	height:40px;
+	background:url(../Images_iPhone4/puffinFemale.png);
+	background-repeat:no-repeat;
+	background-size:110%;
+	background-position:bottom left;
+	margin-top:15px;
+}
+.puffinMale{
+	width:auto;
+	height:40px;
+	background:url(../Images_iPhone4/puffinMale.png);
+	background-repeat:no-repeat;
+	background-size:110%;
+	background-position:bottom left;
+	margin-top:15px;
+}
+.puffinEmpty{
+	width:auto;
+	height:40px;
+	background-repeat:no-repeat;
+	background-size:110%;
+	background-position:bottom left;
+	margin-top:15px;
+}
+.bubble{
+	width:auto;
+	height:60px;
+	background:url(../Images_iPhone4/bubble.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:center;
+}
+.bubbleEmpty{
+	width:auto;
+	height:60px;
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:center;	
+}
+#result{
+	position:relative;
+	margin-top:10px;
+	font-size:1em;
+	text-align:center;
+	top:13px;
+	left:4px;
+}
+#nextButton{
+	width:auto;
+	height:50px;
+	background:url(../Images_iPhone4/nextbutton.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	margin-top:10px;
+}
+
+/* Advanced game */
+#advancedGame{
+	background:url(../Images_iPhone5/gameback1136.png) no-repeat;
+	width:320px;
+	height:568px;
+	background-size:100%;
+}
+#pauseButton{
+	background:url(../Images_iPhone4/pausebutton.png) no-repeat;
+	width:auto;
+	height:78px;
+	background-size:100%;
+	background-position:top right;
+}
+#hintButton{
+	width:auto;
+	height:100px;
+	background:url(../Images_iPhone4/hintbutton.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:bottom right;
+	margin-top:-20px;
+}
+#useHint{
+	position:relative;
+	font-size:1.2em;
+	margin-left:36px;
+	top:60px;
+}
+#stage{
+	width:auto;
+	height:100px;
+	position:relative;
+	font-size:1.5em;
+	top:40px;
+	font-family:sans-serif;
+	text-shadow:none;
+}
+#stageNumber{
+	width:auto;
+	height:100px;
+	position:relative;
+	font-size:1.5em;
+	top:40px;
+	margin-left:-20px;
+	font-family:sans-serif;
+	text-shadow:none;
+}
+
+/* Word list*/
+#wordList{
+	width:320px;
+	height:568px;
+	background:url(../Images_iPhone5/back1920.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.wordListBack{
+	width:auto;
+	height:480px;
+	background:url(../Images_iPhone5/wordlistback.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	margin-top:20px;
+}
+.topGap{
+	height:12px;
+}
+.scrollBar{
+	overflow:auto;
+    -webkit-overflow-scrolling:touch;
+	width:auto;
+	height:450px;
+	padding-left:10px;
+	padding-top:0;
+	padding-right:15px;
+	padding-bottom:20px;
+}
+.listGap{
+	list-style-type:none;
+	margin-top:5px;
+}
+.wordGap{
+	color:#FFFFFF;
+	margin-top:2px;
+	text-shadow:none;
+}
+.lineGap{
+	list-style-type:none;
+	height:1px;
+	background:#000000;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+/* Edit word list */
+#editWordList{
+	width:320px;
+	height:568px;
+	background:url(../Images_iPhone5/back1920.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+#deleteButton{
+	width:auto;
+	height:30px;
+	background:url(../Images_iPhone4/buttonstart.png);
+	background-repeat:no-repeat;
+	background-size:35%;
+	background-position:center;
+}
+#delete{
+	position:relative;
+	top:5px;
+	font-size:1em;
+	text-align:center;
+	color:#FFFFFF;
+}
+.checkbox{
+	margin-bottom:3px;
+}
+.editWordGap{
+	color:#FFFFFF;
+	margin-top:3px;
+	text-shadow:none;
+}
+.editLineGap{
+	list-style-type:none;
+	height:1px;
+	background:#000000;
+	margin-top:2px;
+	margin-bottom:3px;
+}
+
+/* Record */
+#record{
+	width:320px;
+	height:568px;
+	background:url(../Images_iPhone5/back1920.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.rankingBar{
+	width:320px;
+	height:35px;
+	background:url(../Images_iPhone4/ranking.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	margin-top:55px;
+	margin-left:-15px;
+}
+.ranking{
+	position:relative;
+	color:#FFFFFF;
+	font-size:1em;
+	text-align:center;
+	top:10px;
+}
+#rankingBoard{
+	width:auto;
+	height:450px;
+	background:url(../Images_iPhone5/wordlistback.png);
+	background-repeat:no-repeat;
+	background-size:95%;
+	background-position:center;
+	margin-top:-12px;
+}
+.recordText1{
+	font-size:1em;
+	position:relative;
+	color:#B6B6B6;
+	top:23px;
+	left:10px;
+	text-align:center;
+	text-shadow:none;
+}
+.recordText2{
+	height:35px;
+	font-size:1em;
+	position:relative;
+	color:#000000;
+	top:25px;
+	left:10px;
+	text-align:center;
+	text-shadow:none;
+}
+
+/* Setting */
+#setting{
+	width:320px;
+	height:568px;
+	background:url(../Images_iPhone5/back1920.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.settingBar1{
+	width:320px;
+	height:45px;
+	background:url(../Images_iPhone4/white.jpg);
+	background-repeat:no-repeat;
+	background-size:230%;
+	margin-top:120px;
+	margin-left:-15px;
+}
+.settingBar2{
+	width:320px;
+	height:45px;
+	background:url(../Images_iPhone4/white.jpg);
+	background-repeat:no-repeat;
+	background-size:230%;
+	margin-top:1px;
+	margin-left:-15px;
+}
+.settingBar3{
+	width:320px;
+	height:45px;
+	background:url(../Images_iPhone4/white.jpg);
+	background-repeat:no-repeat;
+	background-size:230%;
+	margin-top:45px;
+	margin-left:-15px;
+}
+.settingText{
+	position:relative;
+	color:#000000;
+	font-size:1em;
+	font-style:italic;
+	text-align:center;
+}
+.settingRow1{
+	width:320px;
+	position:relative;
+	top:10px;
+}
+.settingRow2{
+	width:320px;
+	position:relative;
+}
+.radioButton{
+	width:auto;
+	height:50px;
+}
+#male{
+	width:auto;
+	height:40px;
+	background-repeat:no-repeat;
+	background-size:30%;
+}
+#female{
+	width:auto;
+	height:40px;
+	background-repeat:no-repeat;
+	background-size:30%;
+}
+#reset{
+	width:auto;
+	height:20px;
+	background:url(../Images_iPhone4/resetbutton.png);
+	background-repeat:no-repeat;
+	background-size:20%;
+	background-position:center;
+	margin-top:180px;
+}
+#resetText{
+	position:relative;
+	color:#FFFFFF;
+	text-align:center;
+	top:2px;
+}
+
+#window{
+	width:320px;
+	height:568px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+#window:target{
+	opacity:1;
+	pointer-events: auto;
+}
+#window > div{
+   	width: 180px;
+	height:200px;
+	position: relative;
+	margin: 60% auto;
+	border-radius: 10px;
+	background:url(../Images_iPhone4/pausemenu.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+.ulStyle{
+    list-style-type:none;
+	padding-top:25px;
+}
+.pauseButton{
+	width:auto;
+	height:40px;
+    background:url(../Images_iPhone4/buttonstart.png);
+	background-repeat:no-repeat;
+	background-size:70%;
+    margin-left:40px;
+}
+.continue{
+    position:relative;
+	font-size:1em;
+    top:11px;
+    margin-left:22px;
+    text-shadow:none;
+    color:#FFFFFF;
+}
+.restart{
+    position:relative;
+	font-size:1em;
+    top:10px;
+    margin-left:24px;
+    text-shadow:none;
+    color:#FFFFFF;
+}
+.exit{
+    position:relative;
+	font-size:1em;
+    top:10px;
+    margin-left:35px;
+    text-shadow:none;
+    color:#FFFFFF;
+}

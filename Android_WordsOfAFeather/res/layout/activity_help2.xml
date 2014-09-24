@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"      
+        android:background="@drawable/top"
+        android:orientation="horizontal">
+    	        
+	        <TextView
+	            android:id="@+id/starthelp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/starthelp"
+	            android:text="@string/starthelp"
+	            android:textSize="18sp"
+	            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+
+    <RelativeLayout
+		android:id="@+id/down"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/top"
+		android:orientation="vertical" >
+
+		<ImageView
+			android:id="@+id/imageView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/app_name"
+			android:src="@drawable/help1"/>
+		
+
+        <TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"                   
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:text="@string/pagenum2" />
+
+
+	</RelativeLayout>
+         
+</RelativeLayout>
